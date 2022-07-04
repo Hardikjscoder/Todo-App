@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Todo App</h1>
+
+        <div class="inputTodoUser">
+            <input type="text" id="todoInput" placeholder="Add Todo">
+            <button id="addTodo"><i class="fa-solid fa-plus"></i></button>
+
+            <div class="select">
+                <select name="todos" id="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="incompleted">Incompleted</option>
+                </select>
+            </div>
+        </div>
+        <div id="show-message">
+            <span class="message">please enter a value</span>
+            <button id="ok_btn">Ok!</button>
+        </div>
+        <button id="clearBtn">Clear Todos</button>
+    </div>
+
+    <div class="todoList"></div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
